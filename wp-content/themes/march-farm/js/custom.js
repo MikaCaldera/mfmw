@@ -7,23 +7,22 @@ jQuery(function($) {
       $(".dropdown-toggle").removeAttr('data-toggle dropdown');
     }
   });
-  // Videotext module js
-  $('#play-video').on('click', function(ev) {
-    $('#play-video img').css("display","none");
-    $("#video")[0].src += "&autoplay=1";
-    ev.preventDefault();
+  // Videotext module js  ---- DROP Mikes edits here. 
+  $(document).ready(function(){
+    $('.video-embed-image').click(function(e){
+      var videokey = $(this).data('videokey');
+      var videourl = $(this).data('videourl');
+      var imgwidth = $(this).width();
+      var imgheight = $(this).height();
+      console.log(imgwidth + imgheight);
+      var videoposter =  $('.video-poster[data-videoposterkey="'+videokey+'"]');
+      var html = '<iframe class="video-embed-iframe" width="'+imgwidth+'" height="'+imgheight+'" src="'+videourl+'?enablejsapi=1" feature="oembed&quot;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>';
+      console.log(html);
+      videoposter.html(html);
+      var videotext = $('.videotext[data-videotext="'+videokey+'"]');
+      videotext.hide();
+    });
   });
-  // Calculate height and width of responsive video thumb in order to get a responsive YT iframe
-  $vidHeight = $("#measure").height();
-  $vidWidth = $("#measure").width();
-  $("#video").attr('width', $vidWidth);
-  $("#video").attr('height', $vidHeight);
-
-  function hideVideo(){
-    $('#play-video img').css("display","none");
-    $("#video")[0].src += "&autoplay=1";
-    ev.preventDefault();
-  }
 
 });
 
@@ -34,3 +33,4 @@ if(sizer > 768){
 
 	$("ul.sub-menu").css("display","block");
 }
+
