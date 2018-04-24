@@ -20,12 +20,3 @@ $herourl = get_field('hero') ? get_field('hero') : get_field('default_hero', 'op
     </div>
   </div>
 </header>
-
-
-<div class="search">
-  <span class="fa fa-search"></span>
-  <input placeholder="Search...">
-</div>
-<div class="mx-auto logo-hold">
-  <img src="img/marchfarm-white.svg">
-</div>

@@ -78,11 +78,11 @@ if (function_exists('acf_add_options_page')) {
 /**
  * Hides the admin bar on a template page.
  */
-function hide_admin_bar() {
-    wp_add_inline_style('admin-bar', '<style> html { margin-top: 0 !important; } </style>');
-    return false;
-}
-add_filter( 'show_admin_bar', 'hide_admin_bar' );
+// function hide_admin_bar() {
+//     wp_add_inline_style('admin-bar', '<style> html { margin-top: 0 !important; } </style>');
+//     return false;
+// }
+// add_filter( 'show_admin_bar', 'hide_admin_bar' );
 
 // this filter adds a dashboard button near the edit btn for easy dash access
 add_filter( 'genesis_edit_post_link', function(){
@@ -98,7 +98,7 @@ function register_my_menus() {
      )
    );
  }
- add_action( 'init', 'register_my_menus' );
+ add_action( 'init', 'register_my_menus' );  
 
  function atg_menu_classes($classes, $item, $args) {
   if($args->theme_location == 'main-menu') {

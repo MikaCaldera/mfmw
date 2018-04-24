@@ -2,18 +2,34 @@
 /*
 Template Name: search-page
 Template Post Type: page
-*/
-get_header(); ?>
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-          <?php the_content(); ?>
-          <?php edit_post_link(); ?>
-      <?php endwhile; else: ?>
-          <?php _e( 'Sorry, no pages matched your criteria.', 'textdomain' ); ?>
-      <?php endif; ?>
-      <?php include "inc/flex.php" ?>
-      <?php include "inc/parts/map.php" ?>
-      <?php include "inc/megafooter.php" ?>
-      <?php include "inc/footer.php" ?>
-  </body>
+*/?>
+
+
+<?php get_header(); ?>
+    <!-- Search Container -->
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-lg-9 mb-4">
+          <h1 class="blurb-header">Search Results</h1>
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+             <h2> <?php the_title(); ?></h2>
+             <p><?php the_excerpt(); ?><p>
+              <a class="btn btn-light" href="><?php echo get_permalink(); ?>">Read More </a>
+          <?php endwhile; else: ?>
+              <?php _e( 'Sorry, no pages matched your criteria.', 'textdomain' ); ?>
+          <?php endif; ?>
+          <?php include "inc/flex.php" ?>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <?php include "inc/sidebar.php" ?>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+<?php include "inc/parts/map.php" ?>
+
+<?php include "inc/megafooter.php" ?>
+<?php include "inc/footer.php" ?>
+</body>
   <?php wp_footer(); ?>
 </html>
