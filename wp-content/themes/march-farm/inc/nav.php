@@ -7,17 +7,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
     <?php
-wp_nav_menu( array(
-  'menu'              => 'Main Menu',
-  'theme_location'    => 'main-menu',
-  'depth'             => 3,
-  'container'         => '',
-  'container_class'   => '',
-  'container_id'      => 'bs-example-navbar-collapse-1',
-  'menu_class'        => 'navbar-nav justify-content-center',
-  'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-  'walker'            => new wp_bootstrap_navwalker())
- );
+      wp_nav_menu( array(
+        'menu'              => 'Main Menu',
+        'theme_location'    => 'main-menu',
+        'depth'             => 3,
+        'container'         => '',
+        'container_class'   => '',
+        'container_id'      => 'bs-example-navbar-collapse-1',
+        'menu_class'        => 'navbar-nav justify-content-center',
+        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+        'walker'            => new wp_bootstrap_navwalker())
+       );
     ?>
     <?php if( have_rows('social_widget', 'option') ): ?>
 
@@ -25,7 +25,6 @@ wp_nav_menu( array(
 
         <?php while( have_rows('social_widget', 'option') ): the_row(); ?>
             <li class="social"><a class="nav-link" href="<?php the_sub_field('link'); ?>"> <i class="fa fa-fw <?php the_sub_field('font_icon'); ?>"></i></a></li>
-
         <?php endwhile; ?>
 
       </ul>
