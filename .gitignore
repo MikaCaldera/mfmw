@@ -17,12 +17,14 @@ wp-content/wp-cache-config.php
 wp-content/cache/*
 wp-content/cache/supercache/*
 wp-content/backupwordpress-c74f422123-backups/*
+wp-content/backupwordpress-c74f422123-backups
 
 # wpengine specific
 .smushit-status
 .gitattributes
 _wpeprivate
 wp-content/object-cache.php
+wp-content/mu-plugin
 wp-content/mu-plugins/mu-plugin.php
 wp-content/mu-plugins/slt-force-strong-passwords.php
 wp-content/mu-plugins/limit-login-attempts
