@@ -1,3 +1,8 @@
+<?php
+/*
+Navigation
+*/
+?>
 <!-- Navigation https://github.com/wp-bootstrap/wp-bootstrap-navwalker -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
   <div class="container">
@@ -20,17 +25,12 @@
        );
     ?>
     <?php if( have_rows('social_widget', 'option') ): ?>
-
       <ul class="navbar-nav social-menu">
-
         <?php while( have_rows('social_widget', 'option') ): the_row(); ?>
             <li class="social"><a class="nav-link" href="<?php the_sub_field('link'); ?>"> <i class="fa fa-fw <?php the_sub_field('font_icon'); ?>"></i></a></li>
         <?php endwhile; ?>
-
       </ul>
-
     <?php endif; ?>
-
     </div>
   </div>
 </nav>

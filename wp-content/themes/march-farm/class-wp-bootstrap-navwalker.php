@@ -59,7 +59,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 		} else {
 			$class_names = $value = '';
 			$classes = empty( $item->classes ) ? array() : (array) $item->classes;
-			$classes[] = 'menu-item-' . $item->ID;
+			$classes[] = 'menu-item-' . 'nav-item' . $item->ID;
 			$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
 			/*
 			if ( $args->has_children )
@@ -175,7 +175,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			if ( $menu_class )
 				$fb_output .= ' class="' . $menu_class . '"';
 			$fb_output .= '>';
-			$fb_output .= '<li><a href="' . admin_url( 'nav-menus.php' ) . '">Add a menu</a></li>';
+			$fb_output .= '<li class="nav-item"><a class="nav-link" href="' . admin_url( 'nav-menus.php' ) . '">Add a menu</a></li>';
 			$fb_output .= '</ul>';
 			if ( $container )
 				$fb_output .= '</' . $container . '>';

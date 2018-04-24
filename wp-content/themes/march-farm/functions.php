@@ -60,13 +60,9 @@ if (function_exists('acf_add_options_page')) {
     acf_add_options_page(array(
 
         'page_title' => 'Theme General Settings',
-
         'menu_title' => 'Theme Settings',
-
         'menu_slug' => 'theme-general-settings',
-
         'capability' => 'edit_posts',
-
         'redirect' => false
 
     ));
@@ -85,9 +81,9 @@ if (function_exists('acf_add_options_page')) {
 // add_filter( 'show_admin_bar', 'hide_admin_bar' );
 
 // this filter adds a dashboard button near the edit btn for easy dash access
-add_filter( 'genesis_edit_post_link', function(){
-edit_post_link( __( 'EDIT', 'textdomain' ), '', ' | <a href="/wp-admin/">Dashboard</a>' );
- });
+// add_filter( 'genesis_edit_post_link', function(){
+// edit_post_link( __( 'EDIT', 'textdomain' ), '', ' | <a href="/wp-admin/">Dashboard</a>' );
+//  });
 
 // lets add us some menyahs(menus)
 function register_my_menus() {
@@ -109,6 +105,8 @@ function register_my_menus() {
 add_filter('nav_menu_css_class','atg_menu_classes',1,3);
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
+
+// Register Sidebars and widgets
 
 if ( function_exists('register_sidebar') ) {
 

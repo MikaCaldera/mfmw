@@ -3,8 +3,6 @@
 Template Name: search-page
 Template Post Type: page
 */?>
-
-
 <?php get_header(); ?>
     <!-- Search Container -->
     <div class="container">
@@ -27,7 +25,6 @@ Template Post Type: page
     </div>
     <!-- /container -->
 <?php include "inc/parts/map.php" ?>
-
 <?php include "inc/megafooter.php" ?>
 <?php include "inc/footer.php" ?>
 </body>
