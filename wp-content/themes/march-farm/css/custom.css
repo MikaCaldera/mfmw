@@ -213,11 +213,12 @@ section h2 {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
 }
 
-.navbar.navbar-light.bg-light .nav-link {
+.navbar.navbar-light.bg-light a {
   color: #6b98b8;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  display: block;
 }
 
 .navbar.navbar-light.bg-light .dropdown-menu {
@@ -228,6 +229,7 @@ section h2 {
 
 .navbar.navbar-light.bg-light .dropdown-menu a.dropdown-item {
   color: #6b98b8;
+  display: block;
 }
 
 .navbar.navbar-light.bg-light .dropdown-menu a.dropdown-item:hover {

@@ -2,11 +2,12 @@
 .navbar.navbar-light.bg-light{
   background: $white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
-  .nav-link{
+  a{ //Nav Link
     color:$faded-blue;
     font-family:$menufont;
     font-weight:400;
     font-size:14px;
+    display:block;
   }
   .dropdown-menu{
     border-radius: 0;
@@ -14,6 +15,7 @@
     background:$gray-100;
     a.dropdown-item{
       color:$faded-blue;
+      display:block;
       &:hover{
         color:$khaki-green;
         background:$pale-gray;

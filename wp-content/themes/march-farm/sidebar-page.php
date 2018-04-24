@@ -3,7 +3,8 @@
 Template Name: sidebar-page
 Template Post Type: page
 */
-get_header(); ?>
+?>
+<?php get_header(); ?>
 
         <!-- Container -->
         <div class="container">
