@@ -1,0 +1,25 @@
+// Styling for the about section
+.cta{
+  .ctahold{
+    p{
+      color:$gray-600;
+    }
+    .action{
+      font-family: $libre;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.43;
+      letter-spacing: 4.3px;
+      color: $charcoal;
+      .nav{
+        a.nav-link{
+          color: $charcoal;
+          &:hover{
+            color: lighten($charcoal, 20%);
+
+          }
+        }
+      }
+    }
+  }
+}

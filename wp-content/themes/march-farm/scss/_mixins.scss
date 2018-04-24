@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'backtoblack';
+  src: url("../fonts/back_to_black_demo-webfont.woff2") format("woff2"), url("../fonts/back_to_black_demo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700');
+
+
+
+// Global Mixins
+@mixin body-font() {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+}
+
+@mixin heading-font() {
+  font-family: 'backtoblack';
+}
+
+

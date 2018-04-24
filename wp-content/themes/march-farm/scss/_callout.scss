@@ -1,0 +1,64 @@
+// Call out with image left
+.calloutleft {
+    .callbox {
+        padding: 0;
+        img {
+            height: 100%
+        }
+        .flower {
+            background: url('../img/bg-flowers.png') no-repeat center bottom;
+            .content {
+                padding: 4rem 8rem 2rem 0rem;
+                max-width: 600px;
+                h2,
+                h3 {
+                    color: $brown;
+                    font-family: $header-h1;
+                }
+                .intro {
+                    padding-bottom: 1rem;
+                }
+                .list-group-flush {
+                    margin-left: 4rem;
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// Call out with image right
+.calloutright {
+    .callbox {
+        padding: 0;
+        img {
+            height: 100%
+        }
+        .flower {
+            background: url('../img/bg-flowers.png') no-repeat center bottom;
+            .content {
+                padding: 4rem 0rem 2rem 8rem;
+                max-width: 600px;
+                margin-left: 30%;
+                h2,
+                h3 {
+                    color: $brown;
+                    font-family: $header-h1;
+                }
+                .intro {
+                    padding-bottom: 1rem;
+                }
+                .list-group-flush {
+                    margin-right: 4rem;
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+    }
+}

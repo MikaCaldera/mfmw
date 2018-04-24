@@ -1,0 +1,17 @@
+// Styling for the about section
+.accordion{
+  background: url('../img/bg-leaves.png') no-repeat left center;
+  background-color: $pale-gray;
+    .card-title{
+      border-bottom: 1px solid rgba(0,0,0,.125);
+      button.btn.btn-link{
+        font-family:$libre;
+        color:$faded-blue;
+        font-size:20px;
+        text-transform:none;
+      }
+    }
+}
+
+
+

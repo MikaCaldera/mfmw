@@ -1,0 +1,72 @@
+.megafooter {
+    color: $white;
+    background-color: $charcoal;
+    font-family: $bodyfont;
+    font-size: 14px;
+    padding-bottom: 1rem;
+    a {
+        color: $white;
+        &:hover {
+            text-decoration: none;
+            color: fade-out($faded-blue, 0.5);
+        }
+    }
+    .container {
+        .navbar-brand {
+            margin-bottom: 1rem;
+            img {
+                height: 180px;
+                padding: 1.5rem;
+            }
+        }
+        .address {}
+        .footmenu {
+            text-transform: uppercase;
+        }
+        .cat {
+            h6 {
+                font-family: $bodyfont;
+                font-weight: 500;
+                color:$white;
+                font-style:normal;
+            }
+            p {
+                font-style: italic;
+            }
+        }
+    }
+}
+
+
+.footer {
+    background-color: $charcoal;
+    color: $white;
+    line-height: 2rem;
+    border-top: 1px solid $white;
+    padding: 1rem;
+    a {
+        color: $white;
+        &:hover {
+            text-decoration: none;
+            color: fade-out($faded-blue, 0.5);
+        }
+    }
+    p {
+        padding-top: 0.7rem;
+    }
+    .social-menu {
+        padding: 0.7rem;
+        a.nav-link {
+            background-color: $khaki-green;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            margin-right: 8px;
+            padding: 1px 6.5px;
+            i {
+                font-size: 14px;
+                color: $white;
+            }
+        }
+    }
+}

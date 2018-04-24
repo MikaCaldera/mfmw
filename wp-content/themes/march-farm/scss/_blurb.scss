@@ -1,0 +1,15 @@
+// Styling for the about section
+.gray-section{
+  background: url('../img/bg-leaves.png') no-repeat left center;
+  background-color: $pale-gray;
+  .blurbhold{
+    h1.blurb-header{
+      font-family:$header-h1;
+      font-size:50px;
+      color:$brown;
+    }
+    p{
+      color:$charcoal;
+    }
+  }
+}

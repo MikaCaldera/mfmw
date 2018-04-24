@@ -1,0 +1,47 @@
+// Nav bar stylings
+.navbar.navbar-light.bg-light{
+  background: $white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+  .nav-link{
+    color:$faded-blue;
+    font-family:$menufont;
+    font-weight:400;
+    font-size:14px;
+  }
+  .dropdown-menu{
+    border-radius: 0;
+    border:none;
+    background:$gray-100;
+    a.dropdown-item{
+      color:$faded-blue;
+      &:hover{
+        color:$khaki-green;
+        background:$pale-gray;
+      }
+    }
+  }
+  i.icon.fa.fa-bars{
+    font-size: 23px;
+    padding: 0.25rem;
+    color:$faded-blue;
+  }
+  .social-menu{
+    margin-left:5.5rem;
+    li{
+      background-color:$faded-blue;
+      height: 32px;
+      width:32px;
+      border-radius: 50%;
+      margin-right:8px;
+      .nav-link{
+        padding: 4.5px 6.5px;
+        i{
+        font-size:14px;
+        color:$white;
+        }
+      }
+    }
+  }
+}
+
+

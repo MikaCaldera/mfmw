@@ -1,0 +1,110 @@
+// Bootstrap overrides for this template
+
+
+// Global
+a {
+  color: $primary;
+  &:focus,
+  &:hover,
+  &:active {
+    color: darken($primary, 10%);
+  }
+}
+
+.btn {
+  border-width: 2px;
+  text-transform: uppercase;
+  opacity:0.8;
+  border-radius: 0rem !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.text-secondary { 
+  color: $secondary !important;
+}
+
+.btn-primary {
+  background-color: $faded-blue;
+  border-color: $faded-blue;
+  border-radius: 0px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($faded-blue, 10%);
+    border-color: darken($faded-blue, 10%);
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  border-color: $secondary;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($secondary, 20%);
+    border-color: darken($secondary, 20%);
+  }
+}
+.btn-light {
+  background-color: $white;
+  border-color: $white;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.22);
+  font-family:$bodyfont;
+  letter-spacing: 1px;
+  color: $steel;
+  font-size:12px;
+  padding:12px;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($faded-blue, 10%);
+    border-color: lighten($faded-blue, 10%);
+  }
+}
+
+// Main Navigation //
+
+// Brand Information
+.brand{
+  font-family: 'backtoblack';
+  ont-weight: 400;
+  .name, .subname{
+     display:block;
+  }
+  .name{
+    border-bottom: 2px solid red;
+    text-transform: capitalize;
+    font-size:2.2rem;
+  }
+  .subname{
+    font-size:1.2rem;
+    padding-top:0.4rem;
+     
+  }
+}
+
+// Address
+.navbar-nav{
+  font-family: 'Lato';
+  font-weight: 400;
+  color: $faded-blue;
+  .number{
+    font-weight:800;
+  }
+  .site-link{
+    text-transform: lowercase;
+  }
+
+}

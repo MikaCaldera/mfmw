@@ -1,0 +1,55 @@
+// Styling for the about section
+.eventhold{
+  background: url('../img/bg-leaves.png') no-repeat right top;
+  background-color: $pale-gray;
+  .intro{
+    p{
+      color: $gray-600;
+    }
+  }
+  .events{
+    padding: 0px 2rem;
+    .card{
+      color:$faded-blue !important;
+      border: none;
+      background-color: $pale-gray;
+      border-radius:0rem;
+        &:hover{
+        background-color: fade-out($faded-blue, 0.9);
+        }
+      a{
+        color:$faded-blue;
+        &:hover{
+          color:$khaki-green;
+          text-decoration:none; 
+        }
+        .card-img-top{
+          border-radius:0;
+        }
+        .card-body{
+          border-bottom: solid 8px $faded-blue;
+          &:hover{
+            border-bottom: solid 8px $khaki-green;
+          }
+          .card-title{
+          font-family: $bodyfont;
+          font-size: 12px;
+          font-weight: bold;
+          text-align: center;
+          text-transform:uppercase;
+          }
+          .card-text{
+            span{
+            display:block;
+            font-size: 12px;
+            text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  button{
+      margin-top: 2rem;
+  }
+}

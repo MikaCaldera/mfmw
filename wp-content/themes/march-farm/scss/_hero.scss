@@ -1,0 +1,42 @@
+header.hero {
+    background: url("../img/heroimage-holder.png") no-repeat;
+    background-size: cover;
+    .hero-inner {
+        padding: 10rem 2rem;
+        position:relative;
+        @include media-breakpoint-down(sm) {
+            max-height:300px;
+        }
+        .search{
+            position:absolute;
+            top: 10px;
+            right: 16px;
+            input{
+                font-family: $menufont;
+                font-weight: 400;
+                width: 280px;
+                height: 40px;
+                background: $white;
+                border: 1px solid $white;
+                text-indent: 16px;
+                color: $faded-blue !important;
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+            }
+            .fa-search { 
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                color: $faded-blue;
+            }
+        }
+        .logo-hold{
+            width:500px;
+            @include media-breakpoint-down(sm) {
+                width:200px;
+                img{
+                    width:200px;
+                }
+            }
+        }
+    }
+}

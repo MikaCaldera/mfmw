@@ -1,0 +1,43 @@
+// Styling for the about section
+.videotext{
+  background: url('../img/bg-video.png') no-repeat center center;
+  .container{
+    .video-wrapper{
+      .video-poster{
+
+      }
+    }
+    .content{
+    background: $brown;
+    color: $white;
+    width: auto;
+    left: 80%;
+    top: 40%;
+    height: auto;
+    position: absolute;
+    min-width: 350px;
+    padding: 40px;
+    max-width: 450px;
+      h2{
+        font-family: $bodyfont;
+        font-weight:600;
+        font-size:32px;
+        padding-bottom:2rem;
+        color:$white;
+      }
+      p{
+
+      }
+      a{
+        text-transform:uppercase;
+        font-weight:600;
+        color:$white;
+        text-align:center;
+        margin:auto;
+        &:hover{
+          color: fade-out($white, 0.9);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+// Styling for the about section
+.highlights{
+  h1{
+    font-size:50px;
+    color:$brown;
+  }
+  .highhold{
+    .card{
+      text-align:center;
+      border:none;
+      .card-img-top{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
+        margin: auto;
+        &:hover{
+          border: solid 10px $faded-blue;
+          transition: all .4s ease-in-out;
+        }
+      }
+      .card-body{
+        .card-title{
+          font-family: $libre;
+          color:$brown;
+          font-size:14px;
+          letter-spacing: 4.3px;
+          text-transform:uppercase;
+          margin-top:5rem;
+        }
+        .card-text{
+          font-size: 15px;
+          color:$gray-600;
+          line-height: 1.44;
+          font-weight:300;
+          margin-bottom:2rem;
+        }
+        a.btn{
+        }
+      }
+    }
+  }
+}
