@@ -6,6 +6,9 @@
 *.swp
 Thumbs.db
 
+node_modules/
+
+
 # wordpress specific
 wp-config.php
 wp-content/uploads/
