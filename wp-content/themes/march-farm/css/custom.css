@@ -413,6 +413,10 @@ header.hero .hero-inner .logo-hold {
   color: #373a39;
 }
 
+.gray-section .blurbhold img.picture {
+  max-width: 330px;
+}
+
 .highlights h1 {
   font-size: 50px;
   color: #433837;
@@ -484,7 +488,8 @@ header.hero .hero-inner .logo-hold {
 }
 
 .eventhold {
-  background: url("../img/bg-leaves.png") no-repeat right top;
+  background: url("../img/bg-leaves-right.png") no-repeat right top;
+  background-transprancy: 0.6;
   background-color: #f1f2f3;
 }
 

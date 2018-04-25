@@ -8,12 +8,12 @@
             $picture = get_sub_field('picture');
         ?>    
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-8">
         <h1 class="blurb-header"><?= $title; ?></h1>
         <p><?= $content; ?></p>
       </div>
-      <div class="col-lg-6">
-        <img class="" src="<?= $picture; ?>" alt="">
+      <div class="col-lg-4">
+        <img class="picture" src="<?= $picture; ?>" alt="">
       </div>
     </div>
         <?php endwhile; ?>
