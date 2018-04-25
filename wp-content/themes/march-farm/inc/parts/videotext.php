@@ -1,10 +1,14 @@
 <!-- Video with Text -->
-<!--
-echo ACF fields into the data-elements #1 being the key like, 1,2,3 iterator from ACF
+
+<!-- 
+echo ACF fields into the data-elements #1 being the key like, 1,2,3 iterator from ACF 
 so that this can be called multiple times
 echo the youtube URL into the data-videourl
-has to be an embed link
--->
+
+has to be an embed link 
+
+--> 
+
 <div class="videotext">
   <section class="container" >
     <div class="row">
@@ -23,7 +27,7 @@ has to be an embed link
         </a>
       </div>
     </div>
-    
   </div>
 </section>
+
 </div>
