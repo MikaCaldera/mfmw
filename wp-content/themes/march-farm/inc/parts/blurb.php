@@ -1,4 +1,3 @@
-
 <!-- Blurb Section -->
 <div class="gray-section">
  <?php if (have_rows('blurb')):?>  
@@ -6,8 +5,7 @@
         <?php while (have_rows('blurb')) : the_row(); 
             $title = get_sub_field('title');
             $content = get_sub_field('content');
-            $image = get_sub_field('picture');
-
+            $picture = get_sub_field('picture');
         ?>    
     <div class="row">
       <div class="col-lg-6">
@@ -15,7 +13,7 @@
         <p><?= $content; ?></p>
       </div>
       <div class="col-lg-6">
-        <img class="" src="<?= $image; ?>" alt="">
+        <img class="" src="<?= $picture; ?>" alt="">
       </div>
     </div>
         <?php endwhile; ?>
