@@ -8,16 +8,23 @@
     .card{
       text-align:center;
       border:none;
-      .card-img-top{
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
-        margin: auto;
-        &:hover{
-          border: solid 10px $faded-blue;
-          transition: all .4s ease-in-out;
+        .card-img-hold{
+          width: 200px;
+          height: 200px;
+          border-radius: 100px;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
+          margin: auto;
+          overflow: hidden;
+          position: relative;
+          .card-img-top{
+            left: 0;
+            top: 0;
+            position: absolute;
         }
+          &:hover{
+            border: solid 10px $faded-blue;
+            transition: all .4s ease-in-out;
+          }
       }
       .card-body{
         .card-title{
@@ -41,3 +48,5 @@
     }
   }
 }
+
+
