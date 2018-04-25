@@ -7,7 +7,7 @@ Template Post Type: page
     <!-- Search Container -->
     <div class="container">
       <div class="row mt-5">
-        <div class="col-lg-9 mb-4">
+        <div class="col-lg-12 mb-4">
           <h1 class="blurb-header">Search Results</h1>
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
              <h2> <?php the_title(); ?></h2>
@@ -17,9 +17,6 @@ Template Post Type: page
               <?php _e( 'Sorry, no pages matched your criteria.', 'textdomain' ); ?>
           <?php endif; ?>
           <?php include "inc/flex.php" ?>
-        </div>
-        <div class="col-lg-3 mb-4">
-          <?php include "inc/sidebar.php" ?>
         </div>
       </div>
     </div>
