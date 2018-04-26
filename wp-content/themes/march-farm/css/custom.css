@@ -593,10 +593,10 @@ header.hero .hero-inner .logo-hold {
 
 .eventhold .events .card a {
   color: #6b98b8;
+  display: block;
 }
 
 .eventhold .events .card a:hover {
-  color: #929436;
   text-decoration: none;
 }
 
@@ -609,7 +609,7 @@ header.hero .hero-inner .logo-hold {
 }
 
 .eventhold .events .card a .card-body:hover {
-  border-bottom: solid 8px #929436;
+  border-bottom: solid 8px rgba(107, 152, 184, 0.1);
 }
 
 .eventhold .events .card a .card-body .card-title {
@@ -618,6 +618,7 @@ header.hero .hero-inner .logo-hold {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  color: #6b98b8;
 }
 
 .eventhold .events .card a .card-body .card-text span {

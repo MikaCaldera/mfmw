@@ -23,7 +23,7 @@
         ?>
       <div class="col-lg-4 col-sm-6">
         <div class="card h-100">
-          <a href="<?= $linkurl; ?>">   <!-- This is supposed to be an acf link  -->
+          <a href="<?= $linkurl; ?>">
             <img class="card-img-top" src="<?= $image; ?>" alt="">
             <div class="card-body">
               <h4 class="card-title">
