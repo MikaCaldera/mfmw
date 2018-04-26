@@ -438,9 +438,10 @@ header.hero .hero-inner .logo-hold {
 }
 
 .highlights .highhold .card .card-img-hold .card-img-top {
-  left: 0;
-  top: 0;
+  left: -50px;
+  top: 0px;
   position: absolute;
+  width: 150%;
 }
 
 .highlights .highhold .card .card-img-hold:hover {
