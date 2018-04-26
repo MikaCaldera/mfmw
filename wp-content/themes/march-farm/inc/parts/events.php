@@ -8,6 +8,10 @@
         <p><?php the_sub_field('description'); ?></p>
       </div>
     </div>
+    <?php
+      $buttontext = get_sub_field("button_text");
+      $buttonurl = get_sub_field("button_url");
+    ?>
       <?php if (have_rows('event')):?>
     <div class="row justify-content-center events">
         <?php while (have_rows('event')) : the_row();
@@ -37,11 +41,13 @@
     </div>
         <?php endif; ?>
     <!-- Button  -->
+    <?php if( !empty($buttontext) ): ?>
     <div class="row justify-content-md-center">
-      <a href="<?php the_sub_field('link_url'); ?>">
-        <button type="button" class="btn btn-light btn-lg"><?php the_sub_field('link_text'); ?></button>
+      <a href="<?= $buttonurl; ?>">
+        <button type="button" class="btn btn-light btn-lg"><?= $buttontext; ?></button>
       </a>
     </div>
+    <?php endif; ?>
   </div>
 </section>
 </div>
