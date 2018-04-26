@@ -8,17 +8,18 @@
         <p><?php the_sub_field('description'); ?></p>
       </div>
     </div>
-      <?php if (have_rows('event')):?> 
+      <?php if (have_rows('event')):?>
     <div class="row justify-content-center events">
-        <?php while (have_rows('event')) : the_row(); 
+        <?php while (have_rows('event')) : the_row();
               $image = get_sub_field('image');
               $title = get_sub_field('title');
               $date = get_sub_field('date');
-              $time = get_sub_field('time');              
-        ?>     
+              $time = get_sub_field('time');
+              $linkurl = get_sub_field('link_url');
+        ?>
       <div class="col-lg-4 col-sm-6">
         <div class="card h-100">
-          <a href="#">   <!-- This is supposed to be an acf link  -->
+          <a href="<?= $linkurl; ?>">   <!-- This is supposed to be an acf link  -->
             <img class="card-img-top" src="<?= $image; ?>" alt="">
             <div class="card-body">
               <h4 class="card-title">
@@ -33,8 +34,8 @@
         </div>
       </div>
         <?php endwhile; ?>
-    </div>   
-        <?php endif; ?> 
+    </div>
+        <?php endif; ?>
     <!-- Button  -->
     <div class="row justify-content-md-center">
       <a href="<?php the_sub_field('link_url'); ?>">
