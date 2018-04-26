@@ -8,10 +8,8 @@
       <!-- Middle -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
         <nav class="nav justify-content-center social-menu">
-          <a class="nav-link" href="#"> <i class="fa fa-fw fa-vimeo"></i></a>
-          <a class="nav-link" href="#"> <i class="fa fa-fw fa-instagram"></i></a>
-          <a class="nav-link" href="#"> <i class="fa fa-fw fa-twitter"></i></a>
-          <a class="nav-link" href="#"> <i class="fa fa-fw fa-facebook"></i></a>
+          <a class="nav-link" href="https://www.instagram.com/marchfarm/"> <i class="fa fa-fw fa-instagram"></i></a>
+          <a class="nav-link" href="https://www.facebook.com/march.farm.ct/"> <i class="fa fa-fw fa-facebook"></i></a>
         </nav>
       </div>
       <!-- Right -->

@@ -2,7 +2,7 @@
 .navbar.navbar-light.bg-light{
   background: $white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
-  a{ //Nav Link
+  a.nav-link{
     color:$faded-blue;
     font-family:$menufont;
     font-weight:400;
