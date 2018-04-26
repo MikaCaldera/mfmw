@@ -8,13 +8,13 @@
        <?php if (have_rows('images')):?>
          <?php while (have_rows('images')) : the_row();
              $image = get_sub_field('image'); ?>
-
+        <?php if( !empty($image) ): ?>
          <div class="col-lg-3 col-md-4 col-xs-6">
              <a href="<?= $image; ?>" class="d-block mb-4 h-100" data-featherlight="image">
              <img class="img-fluid" src="<?= $image; ?>" alt="">
            </a>
          </div>
-
+        <?php endif; ?>
    <?php endwhile; ?>
    <?php endif; ?>
 
