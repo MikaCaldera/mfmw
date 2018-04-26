@@ -213,24 +213,30 @@ section h2 {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
 }
 
-.navbar.navbar-light.bg-light a.nav-link {
+.navbar.navbar-light.bg-light a {
   color: #6b98b8;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  padding: .5rem;
 }
 
-.navbar.navbar-light.bg-light .dropdown-menu {
+.navbar.navbar-light.bg-light a:hover {
+  text-decoration: none;
+  color: #929436;
+}
+
+.navbar.navbar-light.bg-light .dropdown-menu.show {
   border-radius: 0;
-  border: none;
+  border: none !important;
   background: #f8f9fa;
 }
 
-.navbar.navbar-light.bg-light .dropdown-menu a.dropdown-item {
+.navbar.navbar-light.bg-light .dropdown-menu.show a.dropdown-item {
   color: #6b98b8;
 }
 
-.navbar.navbar-light.bg-light .dropdown-menu a.dropdown-item:hover {
+.navbar.navbar-light.bg-light .dropdown-menu.show a.dropdown-item:hover {
   color: #929436;
   background: #f1f2f3;
 }
@@ -253,11 +259,11 @@ section h2 {
   margin-right: 8px;
 }
 
-.navbar.navbar-light.bg-light .social-menu li .nav-link {
+.navbar.navbar-light.bg-light .social-menu li a {
   padding: 4.5px 6.5px;
 }
 
-.navbar.navbar-light.bg-light .social-menu li .nav-link i {
+.navbar.navbar-light.bg-light .social-menu li a i {
   font-size: 14px;
   color: #ffffff;
 }
@@ -276,11 +282,6 @@ section h2 {
   top: 0;
   padding: 8px 0px;
   left: 100%;
-  margin-top: -10px;
-  margin-left: -1px;
-  -webkit-border-radius: 0 6px 6px 6px;
-  -moz-border-radius: 0 6px 6px;
-  border-radius: 0 6px 6px 6px;
 }
 
 .dropdown-submenu:hover > .dropdown-menu {
@@ -293,12 +294,6 @@ section h2 {
   float: right;
   width: 0;
   height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #ccc;
-  margin-top: 5px;
-  margin-right: -10px;
 }
 
 .dropdown-submenu:hover > a:after {
@@ -312,18 +307,30 @@ section h2 {
 .dropdown-submenu.pull-left > .dropdown-menu {
   left: -100%;
   margin-left: 10px;
-  -webkit-border-radius: 6px 0 6px 6px;
-  -moz-border-radius: 6px 0 6px 6px;
-  border-radius: 6px 0 6px 6px;
 }
 
 ul.dropdown-menu {
-  margin-top: -3px;
-  padding-top: 5px;
+  border-radius: 0;
+  border: none;
+  background: #f8f9fa;
 }
 
-ul.dropdown-menu li {
-  padding: 8px 0px;
+ul.dropdown-menu li a {
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+ul.dropdown-menu li a:hover {
+  color: #929436;
+  background: #f1f2f3;
 }
 
 /*./Dropdown Css*/
