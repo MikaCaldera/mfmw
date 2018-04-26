@@ -12,7 +12,9 @@
     ?>
     <div class="col-lg-3 col-sm-6">
       <div class="card">
-        <a href="<?= $button_link; ?>"><img class="card-img-top" src="<?= $photo; ?>" alt="Card image cap"></a>
+        <a class="card-img-hold href="<?= $button_link; ?>">
+          <img class="card-img-top"  width-"200px" src="<?= $photo; ?>" alt="Card image cap">
+        </a>
         <div class="card-body">
           <h5 class="card-title"><?= $title; ?></h5>
           <p class="card-text"><?= $description; ?></p>

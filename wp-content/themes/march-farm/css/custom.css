@@ -413,6 +413,10 @@ header.hero .hero-inner .logo-hold {
   color: #373a39;
 }
 
+.gray-section .blurbhold img.picture {
+  max-width: 330px;
+}
+
 .highlights h1 {
   font-size: 50px;
   color: #433837;
@@ -423,15 +427,24 @@ header.hero .hero-inner .logo-hold {
   border: none;
 }
 
-.highlights .highhold .card .card-img-top {
+.highlights .highhold .card .card-img-hold {
   width: 200px;
   height: 200px;
   border-radius: 100px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
   margin: auto;
+  overflow: hidden;
+  position: relative;
 }
 
-.highlights .highhold .card .card-img-top:hover {
+.highlights .highhold .card .card-img-hold .card-img-top {
+  left: -50px;
+  top: 0px;
+  position: absolute;
+  width: 150%;
+}
+
+.highlights .highhold .card .card-img-hold:hover {
   border: solid 10px #6b98b8;
   transition: all .4s ease-in-out;
 }
@@ -484,7 +497,8 @@ header.hero .hero-inner .logo-hold {
 }
 
 .eventhold {
-  background: url("../img/bg-leaves.png") no-repeat right top;
+  background: url("../img/bg-leaves-right.png") no-repeat right top;
+  background-transprancy: 0.6;
   background-color: #f1f2f3;
 }
 
@@ -567,6 +581,7 @@ header.hero .hero-inner .logo-hold {
 .calloutleft .callbox .flower .content h3 {
   color: #433837;
   font-family: "backtoblack";
+  font-weight: 100;
 }
 
 .calloutleft .callbox .flower .content .intro {
@@ -600,6 +615,7 @@ header.hero .hero-inner .logo-hold {
 .calloutright .callbox .flower .content h3 {
   color: #433837;
   font-family: "backtoblack";
+  font-weight: 100;
 }
 
 .calloutright .callbox .flower .content .intro {

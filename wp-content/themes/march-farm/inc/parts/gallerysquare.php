@@ -1,25 +1,27 @@
-
 <!-- Gallery Square Section -->
-  <section class="gallery" >
-    <div class="row">
-      <div class="container-fluid">
-        <h1 class="my-4 text-center text-lg-center"><?php the_sub_field('section_title'); ?></h1>
-        <div class="row text-center text-lg-center">
+<section class="gallery" >
+  <div class="row">
+    <div class="container-fluid">
+      <h1 class="my-4 text-center text-lg-center"><?php the_sub_field('section_title'); ?></h1>
+      <div class="row text-center text-lg-center">
         <?php if (have_rows('images')):?>
-          <?php while (have_rows('images')) : the_row();
-              $image = get_sub_field('image'); ?>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <a href="<?= $image; ?>" class="d-block mb-4 h-100" data-featherlight="image">
-              <img class="img-fluid" src="<?= $image; ?>" alt="">
-            </a>
-          </div>
-
-    <?php endwhile; ?>
-    <?php endif; ?>
+        <?php while (have_rows('images')) : the_row();
+        $image = get_sub_field('image'); ?>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="<?= $image; ?>" class="d-block mb-4 h-100" data-featherlight="image">
+            <img class="img-fluid" src="<?= $image; ?>" alt="">
+          </a>
         </div>
+        <?php endwhile; ?>
+        <?php endif; ?>
+     
       </div>
     </div>
-  </section>
-
- <!-- /Gallery -->
+  </div>
+       <div class="row justify-content-md-center">
+          <a href="<?php the_sub_field('button_link'); ?>">
+            <button type="button" class="btn btn-light btn-lg"><?php the_sub_field('button_text'); ?></button>
+          </a>
+        </div>
+</section>
+<!-- /Gallery -->
