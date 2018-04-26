@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* Adapted from Edward McIntyre's wp_bootstrap_navwalker class. 
+* Adapted from Edward McIntyre's wp_bootstrap_navwalker class.
 * Removed support for glyphicon and added support for Font Awesome
 *
 */
@@ -59,7 +59,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 		} else {
 			$class_names = $value = '';
 			$classes = empty( $item->classes ) ? array() : (array) $item->classes;
-			$classes[] = 'menu-item-' . 'nav-item' . $item->ID;
+			$classes[] = 'menu-item-' . $item->ID;
 			$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
 			/*
 			if ( $args->has_children )
@@ -77,7 +77,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 				$class_names = str_replace($classes[$key+1], '', $class_names);
 				$class_names = str_replace($classes[$key], '', $class_names);
 			}
-			
+
 			$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
 			$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
 			$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
@@ -93,7 +93,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 				$atts['data-toggle']	= 'dropdown';
 				$atts['class']			= 'dropdown-toggle';
 				$atts['aria-haspopup']  = 'true';
-				
+
 			} else {
 				$atts['href'] = ! empty( $item->url ) ? $item->url : '';
 			}
@@ -110,7 +110,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			if ( ! empty( $icon ) )
 				$item_output .= '<a'. $attributes .'><span class="fa ' . esc_attr( $icon ) . '"></span>&nbsp;';
 			else
-				$item_output .= '<a'. $attributes .'>';	
+				$item_output .= '<a'. $attributes .'>';
 			$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
 			$item_output .= ( $args->has_children && 0 === $depth ) ? ' <span class="caret"></span></a>' : '</a>';
 			$item_output .= $args->after;
@@ -175,7 +175,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			if ( $menu_class )
 				$fb_output .= ' class="' . $menu_class . '"';
 			$fb_output .= '>';
-			$fb_output .= '<li class="nav-item"><a class="nav-link" href="' . admin_url( 'nav-menus.php' ) . '">Add a menu</a></li>';
+			$fb_output .= '<li><a href="' . admin_url( 'nav-menus.php' ) . '">Add a menu</a></li>';
 			$fb_output .= '</ul>';
 			if ( $container )
 				$fb_output .= '</' . $container . '>';
