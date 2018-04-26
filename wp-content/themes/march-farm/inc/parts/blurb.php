@@ -1,8 +1,8 @@
 <!-- Blurb Section -->
 <div class="gray-section">
- <?php if (have_rows('blurb')):?>  
+ <?php if (have_rows('blurb')):?>
   <section class="container blurbhold" >
-        <?php while (have_rows('blurb')) : the_row(); 
+        <?php while (have_rows('blurb')) : the_row();
             $title = get_sub_field('title');
             $content = get_sub_field('content');
             $picture = get_sub_field('picture');

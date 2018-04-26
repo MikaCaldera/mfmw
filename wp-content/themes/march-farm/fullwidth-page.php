@@ -10,7 +10,10 @@ get_header(); ?>
           <?php _e( 'Sorry, no pages matched your criteria.', 'textdomain' ); ?>
       <?php endif; ?>
       <?php include "inc/flex.php" ?>
-      <?php include "inc/parts/map.php" ?>
+      <?php if ( is_front_page() ) {
+          // your menu code goes here for home page
+          include "inc/parts/map.php";
+      } ?>
       <?php include "inc/megafooter.php" ?>
       <?php include "inc/footer.php" ?>
   </body>
