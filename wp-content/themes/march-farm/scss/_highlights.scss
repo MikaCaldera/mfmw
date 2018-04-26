@@ -17,10 +17,11 @@
           overflow: hidden;
           position: relative;
           .card-img-top{
-            left: 0;
-            top: 0;
+            left: -50px;
+            top: 0px;
             position: absolute;
-        }
+            width: 150%;
+         }
           &:hover{
             border: solid 10px $faded-blue;
             transition: all .4s ease-in-out;
