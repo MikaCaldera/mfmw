@@ -7,7 +7,6 @@
     font-family:$menufont;
     font-weight:400;
     font-size:14px;
-    display:block;
   }
   .dropdown-menu{
     border-radius: 0;
@@ -15,7 +14,6 @@
     background:$gray-100;
     a.dropdown-item{
       color:$faded-blue;
-      display:block;
       &:hover{
         color:$khaki-green;
         background:$pale-gray;
@@ -46,4 +44,60 @@
   }
 }
 
+// Css code for Navigation 
 
+/*Drop down Menus*/
+/*Dropdown Css*/
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    padding: 8px 0px;
+    left: 100%;
+    margin-top: -10px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+    float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+ul.dropdown-menu {
+    margin-top: -3px;
+    padding-top: 5px;
+}
+ul.dropdown-menu li {
+    padding: 8px 0px; 
+}
+/*./Dropdown Css*/
