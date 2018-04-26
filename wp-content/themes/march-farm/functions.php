@@ -98,7 +98,7 @@ function register_my_menus() {
 
  function atg_menu_classes($classes, $item, $args) {
   if($args->theme_location == 'main-menu') {
-    $classes[] = 'nav-link';
+    $classes[] = 'nav-item';
   }
   return $classes;
 }
