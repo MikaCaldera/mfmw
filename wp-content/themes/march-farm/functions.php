@@ -94,11 +94,11 @@ function register_my_menus() {
      )
    );
  }
- add_action( 'init', 'register_my_menus' );  
+ add_action( 'init', 'register_my_menus' );
 
  function atg_menu_classes($classes, $item, $args) {
   if($args->theme_location == 'main-menu') {
-    $classes[] = 'list-inline-item';
+    $classes[] = 'nav-link';
   }
   return $classes;
 }
