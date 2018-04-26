@@ -20,8 +20,8 @@
         }
       a{
         color:$faded-blue;
+        display:block;
         &:hover{
-          color:$khaki-green;
           text-decoration:none; 
         }
         .card-img-top{
@@ -30,7 +30,7 @@
         .card-body{
           border-bottom: solid 8px $faded-blue;
           &:hover{
-            border-bottom: solid 8px $khaki-green;
+            border-bottom: solid 8px fade-out($faded-blue, 0.9);
           }
           .card-title{
           font-family: $bodyfont;
@@ -38,6 +38,7 @@
           font-weight: bold;
           text-align: center;
           text-transform:uppercase;
+          color:$faded-blue;
           }
           .card-text{
             span{
