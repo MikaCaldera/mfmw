@@ -581,6 +581,7 @@ header.hero .hero-inner .logo-hold {
 .calloutleft .callbox .flower .content h3 {
   color: #433837;
   font-family: "backtoblack";
+  font-weight: 100;
 }
 
 .calloutleft .callbox .flower .content .intro {
@@ -614,6 +615,7 @@ header.hero .hero-inner .logo-hold {
 .calloutright .callbox .flower .content h3 {
   color: #433837;
   font-family: "backtoblack";
+  font-weight: 100;
 }
 
 .calloutright .callbox .flower .content .intro {
