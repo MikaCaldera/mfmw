@@ -18,9 +18,9 @@
       </div>
     </div>
   </div>
-      <div class="row justify-content-md-center">
-          <a href="<?php the_sub_field('link_url'); ?>">
-            <button type="button" class="btn btn-light btn-lg"> Button<?php the_sub_field('link_text'); ?></button>
+       <div class="row justify-content-md-center">
+          <a href="<?php the_sub_field('button_link'); ?>">
+            <button type="button" class="btn btn-light btn-lg"><?php the_sub_field('button_text'); ?></button>
           </a>
         </div>
 </section>
