@@ -3,27 +3,27 @@
               $image = get_sub_field('image');
               $title = get_sub_field('title');
               $content = get_sub_field('content');
-              $buttontext = get_sub_field('button_text');
-              $type_of_link = get_sub_field('type_of_link');
+              $rblurb_buttontext = get_sub_field('rblurb_button_text');
+              $rblurb_type_of_link = get_sub_field('rblurb_type_of_link');
 
-              if ($type_of_link == "page")
+              if ($rblurb_type_of_link == "page")
               {
-                $button_link = get_sub_field('page_link');
+                $rblurb_button_link = get_sub_field('rblurb_page_link');
                 $target = '_self';
               }
-              elseif ($type_of_link == "url")
+              elseif ($rblurb_type_of_link == "url")
               {
-                $button_link = get_sub_field('url_link');;
+                $rblurb_button_link = get_sub_field('rblurb_url_link');;
                 $target = '_blank';
               }
-              elseif ($type_of_link == "file")
+              elseif ($rblurb_type_of_link == "file")
               {
-                $button_link = get_sub_field('file_link');
+                $rblurb_button_link = get_sub_field('rblurb_file_link');
                 $target = '_blank';
               }
-              elseif ($type_of_link == "anchor")
+              elseif ($rblurb_type_of_link == "anchor")
               {
-                $button_link = '#'. get_sub_field('anchor_link');
+                $rblurb_button_link = '#'. get_sub_field('rblurb_anchor_link');
                 $target = '_self';
               }
               else
@@ -43,10 +43,10 @@
                     <p><?= $content; ?></p>
                   </div>
                 </div>
-                <?php if( !empty($buttontext) ): ?>
+                <?php if( !empty($rblurb_buttontext) ): ?>
                 <div class="row justify-content-md-center">
-                      <a target="<?= $target; ?>" href="<?= $button_link; ?>">
-                        <button type="button" class="btn btn-light btn-lg"><?= $buttontext ?></button>
+                      <a target="<?= $target; ?>" href="<?= $rblurb_button_link; ?>">
+                        <button type="button" class="btn btn-light btn-lg"><?= $rblurb_buttontext ?></button>
                       </a>
                 </div>
                 <?php endif; ?>

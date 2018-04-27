@@ -22,27 +22,27 @@
    </div>
    <?php
 
-   $text_on_btn = get_sub_field('text_on_btn');
-   $type_of_link = get_sub_field('type_of_link');
+   $gal_rect_text_on_btn = get_sub_field('gal_rect_text_on_btn');
+   $gal_rect_type_of_link = get_sub_field('gal_rect_type_of_link');
 
-   if ($type_of_link == "page")
+   if ($gal_rect_type_of_link == "page")
    {
-     $button_link = get_sub_field('page_link');
+     $gal_rect_button_link = get_sub_field('gal_rect_page_link');
      $target = '_self';
    }
-   elseif ($type_of_link == "url")
+   elseif ($gal_rect_type_of_link == "url")
    {
-     $button_link = get_sub_field('url_link');
+     $gal_rect_button_link = get_sub_field('gal_rect_url_link');
      $target = '_blank';
    }
-   elseif ($type_of_link == "file")
+   elseif ($gal_rect_type_of_link == "file")
    {
-     $button_link = get_sub_field('file_link');
+     $gal_rect_button_link = get_sub_field('gal_rect_file_link');
      $target = '_blank';
    }
-   elseif ($type_of_link == "anchor")
+   elseif ($gal_rect_type_of_link == "anchor")
    {
-     $button_link = '#'. get_sub_field('anchor_link');
+     $gal_rect_button_link = '#'. get_sub_field('gal_rect_anchor_link');
      $target = '_self';
    }
    else
@@ -50,10 +50,10 @@
 
    }
    ?>
-   <?php if( !empty($text_on_btn) ): ?>
+   <?php if( !empty($gal_rect_text_on_btn) ): ?>
    <div class="row justify-content-md-center">
-         <a target="<?= $target; ?>" href="<?= $button_link; ?>">
-           <button type="button" class="btn btn-light btn-lg"><?= $text_on_btn ?></button>
+         <a target="<?= $target; ?>" href="<?= $gal_rect_button_link; ?>">
+           <button type="button" class="btn btn-light btn-lg"><?= $gal_rect_text_on_btn ?></button>
          </a>
    </div>
    <?php endif; ?>

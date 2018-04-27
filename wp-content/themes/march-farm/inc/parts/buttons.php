@@ -1,26 +1,26 @@
 <?php if (have_rows('button')):?>
     <?php while (have_rows('button')) : the_row();
-    $buttontext = get_sub_field('button_text');
-    $type_of_link = get_sub_field('type_of_link');
+    $btn_buttontext = get_sub_field('btn_button_text');
+    $btn_type_of_link = get_sub_field('btn_type_of_link');
 
-    if ($type_of_link == "page")
+    if ($btn_type_of_link == "page")
     {
-      $button_link = get_sub_field('page_link');
+      $btn_button_link = get_sub_field('btn_page_link');
       $target = '_self';
     }
-    elseif ($type_of_link == "url")
+    elseif ($btn_type_of_link == "url")
     {
-      $button_link = get_sub_field('url_link');;
+      $btn_button_link = get_sub_field('btn_url_link');;
       $target = '_blank';
     }
-    elseif ($type_of_link == "file")
+    elseif ($btn_type_of_link == "file")
     {
-      $button_link = get_sub_field('file_link');
+      $btn_button_link = get_sub_field('btn_file_link');
       $target = '_blank';
     }
-    elseif ($type_of_link == "anchor")
+    elseif ($btn_type_of_link == "anchor")
     {
-      $button_link = '#'. get_sub_field('anchor_link');
+      $btn_button_link = '#'. get_sub_field('btn_anchor');
       $target = '_self';
     }
     else
@@ -30,8 +30,8 @@
     ?>
 
         <div class="row justify-content-md-center">
-              <a target="<?= $target; ?>" href="<?= $button_link; ?>">
-                <button type="button" class="btn btn-light btn-lg"><?= $buttontext ?></button>
+              <a target="<?= $target; ?>" href="<?= $btn_button_link; ?>">
+                <button type="button" class="btn btn-light btn-lg"><?= $btn_buttontext ?></button>
               </a>
         </div>
 <?php endwhile; ?>
