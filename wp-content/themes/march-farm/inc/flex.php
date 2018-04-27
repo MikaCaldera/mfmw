@@ -43,7 +43,9 @@ if (have_rows('modules')):
 
          elseif (get_row_layout() == 'introductions'):
             get_template_part('inc/parts/intro');
-
+            
+            elseif (get_row_layout() == 'buttons'):
+               get_template_part('inc/parts/buttons');
 
         endif;
 
