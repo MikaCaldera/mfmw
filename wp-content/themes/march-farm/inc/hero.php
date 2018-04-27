@@ -11,8 +11,7 @@ $herourl = get_field('hero') ? get_field('hero') : get_field('default_hero', 'op
         placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ) ?>"
         value="<?php echo get_search_query() ?>" name="s"
         title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
-        
-        <span type="submit" class="search-submit"><i class="fa fa-search"></i></span>
+        <button type="submit"><i class="fa fa-search"></i></button>
       </form>
     </div>
     <div class="mx-auto logo-hold">
