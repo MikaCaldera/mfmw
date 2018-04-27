@@ -9,7 +9,7 @@ if ($type_of_link == "page")
 }
 elseif ($type_of_link == "url")
 {
-  $button_link = get_sub_field('url_link');;
+  $button_link = get_sub_field('url_link');
   $target = '_blank';
 }
 elseif ($type_of_link == "file")
