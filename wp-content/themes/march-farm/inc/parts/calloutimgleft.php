@@ -4,27 +4,27 @@
         $image = get_sub_field('image');
         $title = get_sub_field('title');
         $content = get_sub_field('content');
-        $buttontext = get_sub_field('button_text');
-        $type_of_link = get_sub_field('type_of_link');
+        $lblurb_buttontext = get_sub_field('lblurb_button_text');
+        $lblurb_type_of_link = get_sub_field('lblurb_type_of_link');
 
-        if ($type_of_link == "page")
+        if ($lblurb_type_of_link == "page")
         {
-          $button_link = get_sub_field('page_link');
+          $lblurb_button_link = get_sub_field('lblurb_page_link');
           $target = '_self';
         }
-        elseif ($type_of_link == "url")
+        elseif ($lblurb_type_of_link == "url")
         {
-          $button_link = get_sub_field('url_link');;
+          $lblurb_button_link = get_sub_field('lblurb_url_link');;
           $target = '_blank';
         }
-        elseif ($type_of_link == "file")
+        elseif ($lblurb_type_of_link == "file")
         {
-          $button_link = get_sub_field('file_link');
+          $lblurb_button_link = get_sub_field('lblurb_file_link');
           $target = '_blank';
         }
-        elseif ($type_of_link == "anchor")
+        elseif ($lblurb_type_of_link == "anchor")
         {
-          $button_link = '#'. get_sub_field('anchor_link');
+          $lblurb_button_link = '#'. get_sub_field('lblurb_anchor_link');
           $target = '_self';
         }
         else
@@ -46,10 +46,10 @@
             <div class="intro">
               <p><?= $content; ?></p>
             </div>
-            <?php if( !empty($buttontext) ): ?>
+            <?php if( !empty($lblurb_buttontext) ): ?>
             <div class="row justify-content-md-center">
-                  <a target="<?= $target; ?>" href="<?= $button_link; ?>">
-                    <button type="button" class="btn btn-light btn-lg"><?= $buttontext ?></button>
+                  <a target="<?= $target; ?>" href="<?= $lblurb_button_link; ?>">
+                    <button type="button" class="btn btn-light btn-lg"><?= $lblurb_buttontext ?></button>
                   </a>
             </div>
             <?php endif; ?>

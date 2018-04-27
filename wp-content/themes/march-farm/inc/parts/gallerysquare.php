@@ -22,46 +22,43 @@
       </div>
     </div>
   </div>
-  <?php
-  $btn_text = get_sub_field('btn_text');
-  $typeoflink = get_sub_field('type_of_link');
-  $page = get_sub_field('page_link');
-  $url = get_sub_field('url_link');
-  $file = get_sub_field('file_link');
-  $anchor = '#'. get_sub_field('anchor_link');
+    <?php if (have_rows('square_gal_btn')):?>
+    <?php while (have_rows('square_gal_btn')) : the_row();
+      $sqbtnbtn_text = get_sub_field('square_gal_btn_text');
+      $sqbtntypeoflink = get_sub_field('square_gal_type_of_link');
 
+      if ($sqbtntypeoflink == "page")
+      {
+        $button = get_sub_field('square_gal_page_link');
+        $target = '_self';
+      }
+      elseif ($typeoflink == "url")
+      {
+        $button = get_sub_field('square_gal_url_link');
+        $target = '_blank';
+      }
+      elseif ($typeoflink == "file")
+      {
+        $button = get_sub_field('square_gal_file_link');
+        $target = '_blank';
+      }
+      elseif ($typeoflink == "anchor")
+      {
+        $button = get_sub_field('square_gal_anchor');
+        $target = '_self';
+      }
+      else
+      {
 
-  if ($typeoflink == "page")
-  {
-    $buttonlink = $page;
-    $target = '_self';
-  }
-  elseif ($typeoflink == "url")
-  {
-    $buttonlink = $url;
-    $target = '_blank';
-  }
-  elseif ($typeoflink == "file")
-  {
-    $buttonlink = $link;
-    $target = '_blank';
-  }
-  elseif ($typeoflink == "anchor")
-  {
-    $buttonlink = $anchor;
-    $target = '_self';
-  }
-  else
-  {
-
-  }
-  ?>
-  <?php if( !empty($btn_text) ): ?>
-  <div class="row justify-content-md-center">
-        <a target="<?= $target; ?>" href="<?= $buttonlink; ?>">
-          <button type="button" class="btn btn-light btn-lg"><?= $btn_text ?></button>
-        </a>
-  </div>
-  <?php endif; ?>
+      }
+      ?>
+      <?php echo $page; ?>
+      <div class="row justify-content-md-center">
+            <a target="<?= $target; ?>" href="<?= $button; ?>">
+              <button type="button" class="btn btn-light btn-lg"><?= $sqbtnbtn_text; ?></button>
+            </a>
+      </div>
+      <?php endwhile; ?>
+      <?php endif; ?>
 </section>
 <!-- /Gallery -->
