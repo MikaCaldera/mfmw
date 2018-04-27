@@ -5,6 +5,7 @@
       <?php while (have_rows('intro')) : the_row();
           $title = get_sub_field('title');
           $content = get_sub_field('content');
+          $picture = get_sub_field('picture');
          ?>
       <div class="row blurb mb-3">
         <div class="col-lg-8">
@@ -12,6 +13,7 @@
           <p><?= $content; ?></p>
         </div>
         <div class="col-lg-4">
+          here
             <img class="picture" src="<?= $picture; ?>" alt="">
         </div>
       </div>
