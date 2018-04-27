@@ -359,19 +359,23 @@ header.hero .hero-inner .search {
 header.hero .hero-inner .search input {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  width: 280px;
+  width: 240px;
   height: 40px;
   background: #ffffff;
   border: 1px solid #ffffff;
   text-indent: 16px;
   color: #6b98b8 !important;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+header.hero .hero-inner .search button {
+  float: right;
+  border: transparent;
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
 }
 
 header.hero .hero-inner .search .fa-search {
-  position: absolute;
-  top: 10px;
-  right: 10px;
   color: #6b98b8;
 }
 
