@@ -18,6 +18,7 @@
               $image = get_sub_field('image');
               $title = get_sub_field('title');
               $date = get_sub_field('date');
+              $desc = get_sub_field('desc');
               $time = get_sub_field('time');
               $linkurl = get_sub_field('link_url');
         ?>
@@ -32,6 +33,7 @@
               <p class="card-text">
                 <span><?= $date; ?></span>
                 <span><?= $time; ?></span>
+                <span><?= $desc; ?></span>
               </p>
             </div>
           </a>

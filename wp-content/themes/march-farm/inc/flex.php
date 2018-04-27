@@ -41,6 +41,10 @@ if (have_rows('modules')):
         elseif (get_row_layout() == 'map'):
             get_template_part('inc/parts/map');
 
+         elseif (get_row_layout() == 'introductions'):
+            get_template_part('inc/parts/introductions');
+
+
         endif;
 
     endwhile;
