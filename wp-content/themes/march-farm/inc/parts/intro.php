@@ -11,9 +11,14 @@
           <h1 class="blurb-header"><?= $title; ?></h1>
           <p><?= $content; ?></p>
         </div>
+        <div class="col-lg-4">
+            <img class="picture" src="<?= $picture; ?>" alt="">
+        </div>
       </div>
       <?php endwhile; ?>
     </section>
   <?php endif; ?>
 </div>
 <!-- /blurb -->
+
+
