@@ -7,7 +7,6 @@
           $content = get_sub_field('content');
          ?>
       <div class="row blurb mb-3">
-        Hello
         <div class="col-lg-8">
           <h1 class="blurb-header"><?= $title; ?></h1>
           <p><?= $content; ?></p>
