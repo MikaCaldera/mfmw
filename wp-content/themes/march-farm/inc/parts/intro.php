@@ -1,9 +1,8 @@
-
 <!-- Introduction Section-->
 <div class="intro">
- <?php if (have_rows('intro')):?>  
+ <?php if (have_rows('intro')):?>
     <section class="container blurbhold" >
-      <?php while (have_rows('intro')) : the_row(); 
+      <?php while (have_rows('intro')) : the_row();
           $title = get_sub_field('title');
           $content = get_sub_field('content');
          ?>

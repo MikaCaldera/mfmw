@@ -36,13 +36,13 @@ if (have_rows('modules')):
             get_template_part('inc/parts/accordian');
 
         elseif (get_row_layout() == 'partners'):
-            get_template_part('inc/parts/partners');                
+            get_template_part('inc/parts/partners');
 
         elseif (get_row_layout() == 'map'):
             get_template_part('inc/parts/map');
 
          elseif (get_row_layout() == 'introductions'):
-            get_template_part('inc/parts/introductions');
+            get_template_part('inc/parts/intro');
 
 
         endif;
