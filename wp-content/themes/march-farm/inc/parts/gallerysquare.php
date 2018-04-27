@@ -1,5 +1,5 @@
 <?php
-
+$button_text = get_sub_field('button_text');;
 $type_of_link = get_sub_field('type_of_link');
 
 if ($type_of_link == "page")
