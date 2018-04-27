@@ -28,6 +28,7 @@
 
     }
     ?>
+
         <div class="row justify-content-md-center">
               <a target="<?= $target; ?>" href="<?= $button_link; ?>">
                 <button type="button" class="btn btn-light btn-lg"><?= $buttontext ?></button>
