@@ -13,7 +13,6 @@
           <p><?= $content; ?></p>
         </div>
         <div class="col-lg-4">
-          here
             <img class="picture" src="<?= $picture; ?>" alt="">
         </div>
       </div>
