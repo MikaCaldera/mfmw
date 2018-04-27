@@ -50,10 +50,10 @@
        </div>
      </div>
    </div>
-   <?php if( !empty($buttontext) ): ?>
+   <?php if( !empty($button_text) ): ?>
    <div class="row justify-content-md-center">
          <a target="<?= $target; ?>" href="<?= $button_link; ?>">
-           <button type="button" class="btn btn-light btn-lg"><?= $buttontext ?></button>
+           <button type="button" class="btn btn-light btn-lg"><?= $button_text ?></button>
          </a>
    </div>
    <?php endif; ?>
