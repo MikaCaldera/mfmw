@@ -1,32 +1,3 @@
-<?php
-$button_text = get_sub_field('button_text');;
-$type_of_link = get_sub_field('type_of_link');
-
-if ($type_of_link == "page")
-{
-  $button_link = get_sub_field('page_link');
-  $target = '_self';
-}
-elseif ($type_of_link == "url")
-{
-  $button_link = get_sub_field('url_link');
-  $target = '_blank';
-}
-elseif ($type_of_link == "file")
-{
-  $button_link = get_sub_field('file_link');
-  $target = '_blank';
-}
-elseif ($type_of_link == "anchor")
-{
-  $button_link = '#'. get_sub_field('anchor_link');
-  $target = '_self';
-}
-else
-{
-
-}
-?>
 <!-- Gallery Square Section -->
 <section class="gallery" >
   <div class="row">
@@ -51,10 +22,44 @@ else
       </div>
     </div>
   </div>
-  <?php if( !empty($button_text) ): ?>
+  <?php
+  $btn_text = get_sub_field('btn_text');
+  $typeoflink = get_sub_field('type_of_link');
+  $page = get_sub_field('page_link');
+  $url = get_sub_field('url_link');
+  $file = get_sub_field('file_link');
+  $anchor = '#'. get_sub_field('anchor_link');
+
+
+  if ($typeoflink == "page")
+  {
+    $buttonlink = $page;
+    $target = '_self';
+  }
+  elseif ($typeoflink == "url")
+  {
+    $buttonlink = $url;
+    $target = '_blank';
+  }
+  elseif ($typeoflink == "file")
+  {
+    $buttonlink = $link;
+    $target = '_blank';
+  }
+  elseif ($typeoflink == "anchor")
+  {
+    $buttonlink = $anchor;
+    $target = '_self';
+  }
+  else
+  {
+
+  }
+  ?>
+  <?php if( !empty($btn_text) ): ?>
   <div class="row justify-content-md-center">
-        <a target="<?= $target; ?>" href="<?= $button_link; ?>">
-          <button type="button" class="btn btn-light btn-lg"><?= $button_text ?></button>
+        <a target="<?= $target; ?>" href="<?= $buttonlink; ?>">
+          <button type="button" class="btn btn-light btn-lg"><?= $btn_text ?></button>
         </a>
   </div>
   <?php endif; ?>
