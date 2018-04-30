@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: search-page
+Template Name: Search Page
 Template Post Type: page
 */?>
 <?php get_header(); ?>
@@ -16,12 +16,10 @@ Template Post Type: page
           <?php endwhile; else: ?>
               <?php _e( 'Sorry, no pages matched your criteria.', 'textdomain' ); ?>
           <?php endif; ?>
-          <?php include "inc/flex.php" ?>
         </div>
       </div>
     </div>
     <!-- /container -->
-<?php include "inc/parts/map.php" ?>
 <?php include "inc/megafooter.php" ?>
 <?php include "inc/footer.php" ?>
 </body>

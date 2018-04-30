@@ -1,33 +1,27 @@
 <?php
 /*
-Template Name: Side Bar
-Template Post Type: page
+Template Name: Sidebar Template
+Template Post Type: page, post
 */
 ?>
 <?php get_header(); ?>
-        <!-- Container -->
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-9 mb-4">
-               <!-- Content -->
-               <div class="content">
-                    <section class="container" >
-                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                            <?php the_content(); ?>
-                             <?php endwhile; else: ?>
-                            <?php _e( 'Sorry, no pages matched your criteria.', 'textdomain' ); ?>
-                        <?php endif; ?>     
-                     </section>
-                 </div>  
-                <!--  End content -->
-              <?php include "inc/flex.php" ?>
-            </div>
-            <div class="col-lg-3 mb-4">
-              <?php include "inc/sidebar.php" ?>
-            </div>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 mt-3 mb-4">  
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <?php the_content(); ?>
+            <?php endwhile; else: ?>
+            <?php _e( 'Sorry, no pages matched your criteria.', 'textdomain' ); ?>
+            <?php endif; ?>
         </div>
-        <!-- /container -->
+        <div class="col-lg-3 mt-4">
+          <?php include "inc/sidebar.php" ?>
+        </div>
+
+      </div>
+      
+    </div>
+
       <?php include "inc/megafooter.php" ?>
       <?php include "inc/footer.php" ?>
   </body>
