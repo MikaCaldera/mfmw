@@ -28,8 +28,7 @@ else
 {
 }
 ?>
-
-  <div class="col-4">
+  <div class="col-lg-1">
     <div>
       <a target="<?= $target; ?>" href="<?= $btn_button_link; ?>">
         <button type="button" class="btn btn-light btn-lg"><?= $btn_button_text ?></button>
