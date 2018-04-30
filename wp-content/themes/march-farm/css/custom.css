@@ -678,6 +678,12 @@ header.hero .hero-inner .logo-hold {
   background: url("../img/bg-flowers.png") no-repeat center bottom;
 }
 
+@media (max-width: 767.98px) {
+  .calloutright .callbox .flower {
+    padding-left: 10%;
+  }
+}
+
 .calloutright .callbox .flower .content {
   padding: 4rem 2rem 2rem 4rem;
   max-width: 600px;
