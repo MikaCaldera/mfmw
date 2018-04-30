@@ -23,8 +23,8 @@ has to be an embed link
           </div>
         </div>
         <div class="content videotext" data-videotext="<?php the_sub_field('number'); ?>"><!-- ACF KEY -->
-        <h2>Title: <?php the_sub_field('title'); ?></h2>
-        <p><?php the_sub_field('descriptions'); ?></p>
+        <h2><?php the_sub_field('title'); ?></h2>
+        <p><?php the_sub_field('description'); ?></p>
         <a class="justify-content-center" href="<?php the_sub_field('link_url'); ?>">
           <?php the_sub_field('link_text'); ?>
         </a>
