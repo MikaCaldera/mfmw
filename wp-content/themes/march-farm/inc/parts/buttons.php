@@ -1,6 +1,6 @@
-<?php if (have_rows('button')):?>
-    <?php while (have_rows('button')) : the_row();
-    $btn_buttontext = get_sub_field('btn_button_text');
+<?php if (have_rows('custbutton')):?>
+    <?php while (have_rows('custbutton')) : the_row();
+    $btn_button_text = get_sub_field('btn_button_text');
     $btn_type_of_link = get_sub_field('btn_type_of_link');
 
     if ($btn_type_of_link == "page")
@@ -31,7 +31,7 @@
 
         <div class="row justify-content-md-center">
               <a target="<?= $target; ?>" href="<?= $btn_button_link; ?>">
-                <button type="button" class="btn btn-light btn-lg"><?= $btn_buttontext ?></button>
+                <button type="button" class="btn btn-light btn-lg"><?= $btn_button_text ?></button>
               </a>
         </div>
 <?php endwhile; ?>
