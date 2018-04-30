@@ -11,20 +11,39 @@
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('address') ) : ?> 
             <?php endif; ?> 
             <!-- One -->
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('megafootone') ) : ?> 
-            <?php endif; ?> 
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto footmenu">
+            <?php
+              wp_nav_menu( array(
+                'menu'              => 'Mega Menu One',
+                'theme_location'    => 'mega-one',
+                'depth'             => 1,
+                'container'         => '',
+                'container_class'   => '',
+                'container_id'      => 'bs-example-navbar-collapse-1',
+                'menu_class'        => 'navbar-nav justify-content-center',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+               );
+            ?>
+            </div>
             <!-- Two -->
-
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('megafoottwo') ) : ?> 
-            <?php endif; ?> 
-
-            <!-- Three -->
- 
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('megafootthree') ) : ?> 
-            <?php endif; ?> 
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto footmenu">
+                <?php
+                  wp_nav_menu( array(
+                    'menu'              => 'Mega Menu Two',
+                    'theme_location'    => 'mega-two',
+                    'depth'             => 1,
+                    'container'         => '',
+                    'container_class'   => '',
+                    'container_id'      => 'bs-example-navbar-collapse-1',
+                    'menu_class'        => 'navbar-nav justify-content-center',
+                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                    'walker'            => new wp_bootstrap_navwalker())
+                   );
+                ?>
+            </div>
 
             <!--Call to action-->
-
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('calltoaction') ) : ?> 
             <?php endif; ?> 
 
