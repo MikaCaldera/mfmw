@@ -13,7 +13,6 @@ has to be an embed link
     <div class="row">
       <div class="col-lg-10 col-md-12">
         <div class="video-wrapper">
-          <!--echo acf for the #1 in the IDs-->
           <?php
             $videoid = get_sub_field('video_id');
             $videourl = "https://www.youtube.com/embed/" . $videoid;
@@ -22,7 +21,7 @@ has to be an embed link
             <img class="video-embed-image" src="<?php the_sub_field('video_poster'); ?>" data-videokey="1" data-videourl="<?= $videourl; ?>">
           </div>
         </div>
-        <div class="content videotext" data-videotext="<?php the_sub_field('number'); ?>"><!-- ACF KEY -->
+        <div class="content videotext" data-videotext="<?php the_sub_field('number'); ?>">
         <h2><?php the_sub_field('title'); ?></h2>
         <p><?php the_sub_field('description'); ?></p>
         <a class="justify-content-center" href="<?php the_sub_field('link_url'); ?>">
