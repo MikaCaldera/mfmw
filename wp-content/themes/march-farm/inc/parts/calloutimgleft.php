@@ -9,26 +9,26 @@
 
         if ($lblurb_type_of_link == "page")
         {
-          $lblurb_button_link = get_sub_field('lblurb_page_link');
-          $target = '_self';
-        }
-        elseif ($lblurb_type_of_link == "url")
-        {
-          $lblurb_button_link = get_sub_field('lblurb_url_link');;
-          $target = '_blank';
-        }
-        elseif ($lblurb_type_of_link == "file")
-        {
-          $lblurb_button_link = get_sub_field('lblurb_file_link');
-          $target = '_blank';
-        }
-        elseif ($lblurb_type_of_link == "anchor")
-        {
-          $lblurb_button_link = '#'. get_sub_field('lblurb_anchor_link');
-          $target = '_self';
-        }
-        else
-        {
+            $lblurb_button_link = get_sub_field('lblurb_page_link');
+            $target = '_self';
+          }
+          elseif ($lblurb_type_of_link == "url")
+          {
+            $lblurb_button_link = get_sub_field('lblurb_url_link');;
+            $target = '_blank';
+          }
+          elseif ($lblurb_type_of_link == "file")
+          {
+            $lblurb_button_link = get_sub_field('lblurb_file_link');
+            $target = '_blank';
+          }
+          elseif ($lblurb_type_of_link == "anchor")
+          {
+            $lblurb_button_link = '#'. get_sub_field('lblurb_anchor_link');
+            $target = '_self';
+          }
+          else
+          {
 
         }
         ?>

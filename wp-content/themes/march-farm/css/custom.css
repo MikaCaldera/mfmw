@@ -639,12 +639,14 @@ header.hero .hero-inner .logo-hold {
   padding: 0;
 }
 
-.calloutleft .callbox img {
-  height: 100%;
-}
-
 .calloutleft .callbox .flower {
   background: url("../img/bg-flowers.png") no-repeat center bottom;
+}
+
+@media (max-width: 767.98px) {
+  .calloutleft .callbox .flower {
+    padding-left: 10%;
+  }
 }
 
 .calloutleft .callbox .flower .content {
@@ -672,18 +674,13 @@ header.hero .hero-inner .logo-hold {
   padding: 0;
 }
 
-.calloutright .callbox img {
-  height: 100%;
-}
-
 .calloutright .callbox .flower {
   background: url("../img/bg-flowers.png") no-repeat center bottom;
 }
 
 .calloutright .callbox .flower .content {
-  padding: 4rem 0rem 2rem 8rem;
+  padding: 4rem 2rem 2rem 4rem;
   max-width: 600px;
-  margin-left: 30%;
 }
 
 .calloutright .callbox .flower .content h2,
