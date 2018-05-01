@@ -1,5 +1,5 @@
 <?php
-
+//error_reporting(E_ALL);
 /**********************************
  * Bootrap & Css & Icons *
  **********************************/
@@ -88,7 +88,12 @@ if (function_exists('acf_add_options_page')) {
 // edit_post_link( __( 'EDIT', 'textdomain' ), '', ' | <a href="/wp-admin/">Dashboard</a>' );
 //  });
 
-// lets add us some menyahs(menus)
+// lets add us some menus(menus)
+
+// new implementation of bootstrap 4 nav walker
+require_once('bs4navwalker.php');
+register_nav_menu('top', 'Top menu');
+
 function register_my_menus() {
   register_nav_menus(
     array(
@@ -109,10 +114,6 @@ function register_my_menus() {
 
 //add_filter('nav_menu_css_class','atg_menu_classes',1,3);
 //require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
-
-// new implementation of bootstrap 4 nav walker
-require_once('bs4navwalker.php');
-register_nav_menu('top', 'Top menu');
 
 
 // Register Sidebars and widgets
