@@ -4,7 +4,7 @@ jQuery(function($) {
     if ($(window).width() < 768) {
       $(".dropdown-toggle").attr('data-toggle', 'dropdown');
     } else {
-      $(".dropdown-toggle").removeAttr('data-toggle dropdown');
+      $(".dropdown-toggle").removeAttr('data-toggle');
     }
   });
   // Videotext module js  ---- DROP Mikes edits here.

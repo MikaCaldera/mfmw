@@ -7,6 +7,9 @@
 
 function mc_enqueue_my_scripts() {
     // jQuery is stated as a dependancy of bootstrap-js - it will be loaded by WordPress before the BS scripts
+
+	wp_enqueue_script('tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js', array('jquery'), true);
+	wp_enqueue_script('jquery3', 'https://code.jquery.com/jquery-3.3.1.min.js', array('jquery'), true);
     wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', array('jquery'), true); // all the bootstrap javascript goodness
    wp_enqueue_script( 'responsive-menyas', get_stylesheet_directory_uri() . '/js/responsive-menus.min.js'); // all
    wp_enqueue_script( 'matchheight', get_stylesheet_directory_uri() . '/js/jquery.matchHeight.min.js'); // all
@@ -18,7 +21,7 @@ add_action('wp_enqueue_scripts', 'mc_enqueue_my_scripts');
 
 function mc_enqueue_mccode() {
   // tether is required for bootstrap 4
-  wp_enqueue_script('tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js', array('jquery'), true);
+
      // jQuery is stated as a dependancy of bootstrap-js - it will be loaded by WordPress before the BS scripts
   wp_enqueue_script( 'featherbox', get_stylesheet_directory_uri() . '/vendor/featherlight/featherlight.min.js');
 
@@ -103,8 +106,13 @@ function register_my_menus() {
   }
   return $classes;
 }
-add_filter('nav_menu_css_class','atg_menu_classes',1,3);
-require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
+//add_filter('nav_menu_css_class','atg_menu_classes',1,3);
+//require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
+// new implementation of bootstrap 4 nav walker
+require_once('bs4navwalker.php');
+register_nav_menu('top', 'Top menu (bootstrap4)');
 
 
 // Register Sidebars and widgets
