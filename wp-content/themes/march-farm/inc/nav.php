@@ -4,26 +4,25 @@ Navigation
 */
 ?>
 <!-- Navigation https://github.com/wp-bootstrap/wp-bootstrap-navwalker -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="<?php echo get_site_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri();?>/img/marchfarm-logo.svg" alt="march farm"></a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="icon fa fa-bars"></i></span>
+<nav class="navbar navbar-expand-md navbar-light bg-faded">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-    <?php
-      wp_nav_menu( array(
-        'menu'              => 'Main Menu',
-        'theme_location'    => 'main-menu',
-        'depth'             => 3,
-        'container'         => '',
-        'container_class'   => '',
-        'container_id'      => 'bs-example-navbar-collapse-1',
-        'menu_class'        => 'navbar-nav justify-content-center',
-        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-        'walker'            => new wp_bootstrap_navwalker())
-       );
-    ?>
+	<?php
+	wp_nav_menu([
+		'menu'            => 'top',
+		'theme_location'  => 'top',
+		'container'       => 'div',
+		'container_id'    => 'bs4navbar',
+		'container_class' => 'collapse navbar-collapse',
+		'menu_id'         => false,
+		'menu_class'      => 'navbar-nav mr-auto',
+		'depth'           => 2,
+		'fallback_cb'     => 'bs4navwalker::fallback',
+		'walker'          => new bs4navwalker()
+	]);
+	?>
     <?php if( have_rows('social_widget', 'option') ): ?>
       <ul class="navbar-nav social-menu">
         <?php while( have_rows('social_widget', 'option') ): the_row(); ?>
