@@ -4,8 +4,8 @@ Navigation
 */
 ?>
 <!-- Navigation https://github.com/wp-bootstrap/wp-bootstrap-navwalker -->
-<nav class="navbar navbar-expand-md navbar-light bg-faded">
-    <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="index.php"><img src="<?php echo get_template_directory_uri();_?>/img/marchfarm-logo.svg" alt="march farm"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
