@@ -112,7 +112,7 @@ function register_my_menus() {
 
 // new implementation of bootstrap 4 nav walker
 require_once('bs4navwalker.php');
-register_nav_menu('top', 'Top menu (bootstrap4)');
+register_nav_menu('top', 'Top menu');
 
 
 // Register Sidebars and widgets
