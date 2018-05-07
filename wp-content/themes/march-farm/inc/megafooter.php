@@ -22,7 +22,7 @@
                 'container_id'      => 'bs-example-navbar-collapse-1',
                 'menu_class'        => 'navbar-nav justify-content-center',
                 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                'walker'            => new wp_bootstrap_navwalker())
+                'walker'            => new bs4navwalker())
                );
             ?>
             </div>
@@ -38,7 +38,7 @@
                     'container_id'      => 'bs-example-navbar-collapse-1',
                     'menu_class'        => 'navbar-nav justify-content-center',
                     'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                    'walker'            => new wp_bootstrap_navwalker())
+                    'walker'            => new bs4navwalker())
                    );
                 ?>
             </div>
