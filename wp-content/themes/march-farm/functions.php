@@ -92,7 +92,7 @@ function hours_list(){
 	$hourshtml = "<ul id='hours-list'>";
 	$hourshtml .= "<li>Sunday:  " . $all_hours[0] . "</li>";
 	$hourshtml .= "<li>Monday:  " . $all_hours[1] . "</li>";
-	$hourshtml .= "<li>Tueday:  " . $all_hours[2] . "</li>";
+	$hourshtml .= "<li>Tuesday:  " . $all_hours[2] . "</li>";
 	$hourshtml .= "<li>Wednesday:  " . $all_hours[3] . "</li>";
 	$hourshtml .= "<li>Thursday:  " . $all_hours[4] . "</li>";
 	$hourshtml .= "<li>Friday:  " . $all_hours[5] . "</li>";
