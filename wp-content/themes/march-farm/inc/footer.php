@@ -1,3 +1,14 @@
+<?php
+
+if( strlen(get_field('site_wide_alert', 'option')) > 0 ){ ?>
+    <div id="site_wide_alert" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Alert!</strong> <?php echo get_field('site_wide_alert', 'option'); ?>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<?php } ?>
+
 <footer class="footer">
   <div class="container">
     <div class="row">
@@ -14,7 +25,7 @@
       </div>
       <!-- Right -->
       <div class="col-md-3 col-lg-3 col-xl-3">
-        <p class="text-right"><a href="#!">mirandacreative.com</a></p>
+        <p class="text-right"><a href="http://mirandacreative.com">mirandacreative.com</a></p>
       </div>
     </div> 
   </div>
