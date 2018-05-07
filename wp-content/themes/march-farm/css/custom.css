@@ -861,3 +861,12 @@ header.hero .hero-inner .hours span {
   font-size: 20px;
   text-transform: none;
 }
+
+#site_wide_alert{
+  margin-left: 2vw;
+  width: 92vw;
+  height: auto;
+  z-index: 99999;
+  position: fixed;
+  bottom: 0;
+}
