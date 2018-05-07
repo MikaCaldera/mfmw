@@ -3,7 +3,7 @@
 <?php
 $herourl = get_field('hero') ? get_field('hero') : get_field('default_hero', 'option');
 ?>
-<header class="hero" style="background: url(<?= $herourl ?>) no-repeat;    background-size: cover;">
+<header class="hero" style="background: url(<?= $herourl ?>) no-repeat bottom;    background-size: cover;">
   <div class="hero-inner">
     <div class="search">
       <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
