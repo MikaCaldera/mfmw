@@ -349,7 +349,7 @@ header.hero .hero-inner {
     max-height: 300px;
   }
 }
-
+/* search */
 header.hero .hero-inner .search {
   position: absolute;
   top: 10px;
@@ -375,7 +375,7 @@ header.hero .hero-inner .search button {
   height: 40px;
 }
 
-header.hero .hero-inner .search .fa-search {
+#search-icon {
   color: #6b98b8;
 }
 
@@ -391,6 +391,106 @@ header.hero .hero-inner .logo-hold {
     width: 200px;
   }
 }
+
+ /* /search */
+
+/* hours */
+
+#active-hours-link{
+  text-decoration: none;
+}
+
+header.hero .hero-inner .hours {
+  position: absolute;
+  top: 10px;
+  right: 344px;
+  width: 240px !important;
+}
+
+#active-hours-wrapper{
+
+}
+
+@media (max-width: 600px){
+  header.hero .hero-inner .hours {
+    position: absolute;
+    top: 60px;
+    right: 56px;
+  }
+}
+
+header.hero .hero-inner .hours div {
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  width: 280px;
+  height: 40px;
+  background: #6b98b8;
+  text-indent: 12px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
+}
+
+header.hero .hero-inner .hours button {
+  float: left;
+  border: transparent;
+  background: #6b98b8;
+  width: 40px;
+  height: 40px;
+}
+
+#hoursclock {
+  cursor: pointer;
+  color: #FFF !important;
+}
+
+header.hero .hero-inner .hours span {
+  position: relative;
+  top: 7px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.64;
+  text-align: left;
+  color: #ffffff;
+}
+
+#active-hours-text{
+  position: relative;
+  top: 7px;
+  width: 172px;
+  height: 23px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.64;
+  text-align: left;
+  color: #ffffff;
+}
+
+#active-hours-arrow{
+
+  position: relative;
+  top: 14px;
+  right: 14px;
+  float: right;
+
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+#hours-list, #hours-list li{
+  padding: 0;
+  font-family: Lato;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: medium;
+}
+
+/* /hours */
 
 .megafooter {
   color: #ffffff;
