@@ -3,7 +3,7 @@
   <section class="container">
     <h1 class="my-4 text-center text-lg-center"><?php the_sub_field('section_title'); ?></h1>
     <div class="row justify-content-start intro">
-      <div class="col-lg-7">
+      <div class="col-lg-12">
         <h1 class="display-4"><?php the_sub_field('title'); ?></h1>
         <p><?php the_sub_field('description'); ?></p>
       </div>

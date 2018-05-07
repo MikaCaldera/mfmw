@@ -4,7 +4,6 @@
  * Bootrap & Css & Icons *
  **********************************/
 
-
 function mc_enqueue_my_scripts() {
     // jQuery is stated as a dependancy of bootstrap-js - it will be loaded by WordPress before the BS scripts
 
@@ -74,19 +73,36 @@ if (function_exists('acf_add_options_page')) {
 
 }
 
-/**
- * Hides the admin bar on a template page.
- */
-// function hide_admin_bar() {
-//     wp_add_inline_style('admin-bar', '<style> html { margin-top: 0 !important; } </style>');
-//     return false;
-// }
-// add_filter( 'show_admin_bar', 'hide_admin_bar' );
-//
-//// this filter adds a dashboard button near the edit btn for easy dash access
-// add_filter( 'genesis_edit_post_link', function(){
-// edit_post_link( __( 'EDIT', 'textdomain' ), '', ' | <a href="/wp-admin/">Dashboard</a>' );
-//  });
+function hours_list(){
+
+// active hours
+	$dayofweek = date('w'); // returns an index from 0 to 6 starting with sunday as 0 - this is today's day of the week
+	$all_hours = array(
+		0 => get_field('sunday_hours', 'option') ? get_field('sunday_hours', 'option') : "closed",
+		1 => get_field('monday_hours', 'option') ? get_field('monday_hours', 'option') : "closed",
+		2 => get_field('tuesday_hours', 'option') ? get_field('tuesday_hours', 'option') : "closed",
+		3 => get_field('wednesday_hours', 'option') ? get_field('wednesday_hours', 'option') : "closed",
+		4 => get_field('thursday_hours', 'option') ? get_field('thursday_hours', 'option') : "closed",
+		5 => get_field('friday_hours', 'option') ? get_field('friday_hours', 'option') : "closed",
+		6 => get_field('saturday_hours', 'option') ? get_field('saturday_hours', 'option') : "closed",
+	);
+// get the value, set it to the active hours variable
+	$active_hours = $all_hours[$dayofweek];
+
+	$hourshtml = "<ul id='hours-list'>";
+	$hourshtml .= "<li>Sunday:  " . $all_hours[0] . "</li>";
+	$hourshtml .= "<li>Monday:  " . $all_hours[1] . "</li>";
+	$hourshtml .= "<li>Tueday:  " . $all_hours[2] . "</li>";
+	$hourshtml .= "<li>Wedday:  " . $all_hours[3] . "</li>";
+	$hourshtml .= "<li>Thursday:  " . $all_hours[4] . "</li>";
+	$hourshtml .= "<li>Friday:  " . $all_hours[5] . "</li>";
+	$hourshtml .= "<li>Saturday:  " . $all_hours[6] . "</li>";
+	$hourshtml .= "</ul>";
+
+	return $hourshtml;
+}
+
+add_shortcode('hourslist', 'hours_list');
 
 // lets add us some menus(menus)
 
