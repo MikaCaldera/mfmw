@@ -819,7 +819,7 @@ header.hero .hero-inner .hours span {
   position: absolute;
   min-width: 350px;
   padding: 40px;
-  max-width: 450px;
+  /*max-width: 450px;*/
 }
 
 .videotext .container .content h2 {
@@ -840,6 +840,19 @@ header.hero .hero-inner .hours span {
 
 .videotext .container .content a:hover {
   color: rgba(255, 255, 255, 0.1);
+}
+img.video-embed-image{
+  width: 100%;
+}
+
+@media (max-width: 993px){
+  div.content.videotext{
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+    max-width: none;
+    width: 100% !important;
+  }
 }
 
 .map {
