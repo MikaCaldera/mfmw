@@ -82,8 +82,8 @@ if (function_exists('acf_add_options_page')) {
 //     return false;
 // }
 // add_filter( 'show_admin_bar', 'hide_admin_bar' );
-
-// this filter adds a dashboard button near the edit btn for easy dash access
+//
+//// this filter adds a dashboard button near the edit btn for easy dash access
 // add_filter( 'genesis_edit_post_link', function(){
 // edit_post_link( __( 'EDIT', 'textdomain' ), '', ' | <a href="/wp-admin/">Dashboard</a>' );
 //  });
