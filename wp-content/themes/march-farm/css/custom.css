@@ -852,6 +852,7 @@ img.video-embed-image{
     left: 0px !important;
     max-width: none;
     width: 100% !important;
+    margin: 0 !important;
   }
 }
 
