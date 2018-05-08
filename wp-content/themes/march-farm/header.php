@@ -14,15 +14,11 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
     <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
-    
+
     <?php wp_head(); ?>
     <?php the_field('header_scripts', 'option'); ?>
+    <?php $postid = get_the_ID(); ?>
   </head>
-   <body class="">
+   <body class="page<?= $postid; ?>">
     <?php include "inc/hero.php" ?>
     <?php include "inc/nav.php" ?>
-
-
-
-
-        
