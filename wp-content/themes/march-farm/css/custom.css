@@ -425,7 +425,7 @@ header.hero .hero-inner .hours div {
   font-weight: 400;
   width: 280px;
   height: 40px;
-  background: #6b98b8;
+  background: #737c8f;
   text-indent: 12px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
 }
@@ -433,12 +433,15 @@ header.hero .hero-inner .hours div {
 header.hero .hero-inner .hours button {
   float: left;
   border: transparent;
-  background: #6b98b8;
+  /*background: #6b98b8;*/
+  background: #737c8f;
   width: 40px;
   height: 40px;
 }
 
 #hoursclock {
+  position: relative;
+  top: 3px;
   cursor: pointer;
   color: #FFF !important;
 }
