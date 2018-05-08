@@ -425,7 +425,8 @@ header.hero .hero-inner .hours div {
   font-weight: 400;
   width: 280px;
   height: 40px;
-  background: #737c8f;
+  /*background: #6b98b8; this is the blue from Mikas awesome design that Mike did not want to change */
+  background: #433837;
   text-indent: 12px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
 }
@@ -433,8 +434,8 @@ header.hero .hero-inner .hours div {
 header.hero .hero-inner .hours button {
   float: left;
   border: transparent;
-  /*background: #6b98b8;*/
-  background: #737c8f;
+  /*background: #6b98b8; this is the blue from Mikas awesome design that Mike did not want to change */
+  background: #433837;
   width: 40px;
   height: 40px;
 }
