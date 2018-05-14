@@ -967,7 +967,7 @@ img.video-embed-image{
 @media screen and (max-width: 991px){
   /* padding on the contact form so it doesnt touch edge */
   .calloutleft .callbox .flower .content {
-    padding: 4rem 8rem 2rem 2rem;
+    padding: 4rem 2rem 2rem 2rem;
     max-width: 600px;
   }
 }
@@ -1050,3 +1050,18 @@ input#wpsearch.search-field{
   max-width: 90vw !important;
   overflow-x: hidden !important;
 }
+@media(max-width: 600px){
+  li.connect-with-us-captcha {
+    transform: scale(0.7);
+    position: relative;
+    right: 36px;
+  }
+}
+
+
+/*.ginput_container.ginput_recaptcha{*/
+  /*width: 40% !important;*/
+/*}*/
+/*iframe {*/
+  /*max-width: 100vw !important;*/
+/*}*/
