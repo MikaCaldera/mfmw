@@ -44,7 +44,7 @@
           <div>
             <h2><?= $title; ?></h2>
             <div class="intro">
-              <p><?= $content; ?></p>
+              <?= $content; ?>
             </div>
             <?php if( !empty($lblurb_buttontext) ): ?>
             <div class="row justify-content-md-center">

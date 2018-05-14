@@ -4,7 +4,7 @@
   <section class="container">
     <div class="row ctahold">
       <div class="col-lg-6">
-        <h1 class="display-4"><?php the_sub_field('title'); ?></h2>
+        <h1 class="display-4"><?php the_sub_field('title'); ?></h1>
       </div>
       <div class="col-lg-6">
         <p><?php the_sub_field('description'); ?></p>

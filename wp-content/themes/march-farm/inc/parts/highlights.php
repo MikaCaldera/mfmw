@@ -38,7 +38,7 @@
     <div class="col-lg-3 col-sm-6">
       <div class="card">
         <a class="card-img-hold" target="<?= $target; ?>" href="<?= $button_link; ?>">
-          <img class="card-img-top"  width-"200px" src="<?= $photo; ?>" alt="Card image cap">
+          <img class="card-img-top"  width="200px" src="<?= $photo; ?>" alt="Card image cap"/>
         </a>
         <div class="card-body">
           <h5 class="card-title"><?= $title; ?></h5>
