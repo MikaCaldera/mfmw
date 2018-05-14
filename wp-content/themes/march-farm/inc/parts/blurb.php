@@ -11,13 +11,15 @@
         ?>
     <a style="height: 0px;" name="<?= $anchor; ?>"></a>
     <div class="row blurb mb-3">
+        <div class="col-12">
+            <h1 class="blurb-header"><?= $title; ?></h1>
+        </div>
       <div class="col-lg-8">
-        <h1 class="blurb-header"><?= $title; ?></h1>
         <h6 class=""><?= $subtitle; ?></h6>
         <p><?= $content; ?></p>
       </div>
       <div class="col-lg-4">
-        <img class="picture" src="<?= $picture; ?>" alt="">
+        <img  class="picture" src="<?= $picture; ?>" alt="">
       </div>
     </div>
         <?php endwhile; ?>
