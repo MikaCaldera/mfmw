@@ -34,7 +34,7 @@
 <!-- Callout -->
 <div class="calloutright">
     <section class="container-fluid callbox">
-        <div class="row">
+        <div class="row calout row">
             <div class="col-lg-6 col-md-12 flower d-flex justify-content-between">
               <div class="content">
                 <div>
