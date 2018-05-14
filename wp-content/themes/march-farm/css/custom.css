@@ -903,14 +903,14 @@ img.video-embed-image{
   min-height: 136px !important;
 }
 .videotext {
-  margin: 111px 0px !important;
+  /*margin: 111px 0px !important;*/
 }
 .gallery {
   padding-top: 154px !important;
 }
 .page1849 .calloutleft {
   background-color: #f1f2f3!important;
-  padding-top: 54px;
+  /*margin-top: 24px;*/
 }
 .cta h1.display-4 {
   font-family: 'Libre Baskerville', serif;
@@ -942,19 +942,28 @@ img.video-embed-image{
   background: url(../img/bg-leaves-right.png) no-repeat right top!important;
 }
 .videotext {
-  margin: 114px 0px !important;
-  padding-bottom: 50px;
+  /*margin: 114px 0px;*/
+  margin-bottom: 120px;
 }
 /* family fun page */
 .page1822 .flower h2
 {
   padding-top: 23px;
 }
-/* padding on the contact form so it doesnt touch edge */
-.calloutleft .callbox .flower .content {
-  padding: 4rem 8rem 2rem 2rem;
-  max-width: 600px;
+
+@media screen and (max-width: 991px){
+  /* padding on the contact form so it doesnt touch edge */
+  .calloutleft .callbox .flower .content {
+    padding: 4rem 8rem 2rem 2rem;
+    max-width: 600px;
+  }
 }
+
+.callout-row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 /* hours widget */
 header.hero .hero-inner .hours div {
   cursor: pointer;

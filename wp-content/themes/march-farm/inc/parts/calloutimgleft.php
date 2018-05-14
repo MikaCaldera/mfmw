@@ -35,7 +35,7 @@
 
 <div class="calloutleft">
   <section class="container-fluid callbox">
-    <div class="row">
+    <div class="row callout-row">
       <div class="col-lg-6 col-md-12">
         <img class="img-fluid" alt="Responsive image" src="<?= $image; ?>">
       </div>
