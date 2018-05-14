@@ -50,6 +50,5 @@
       </a>
     </div>
     <?php endif; ?>
+  </section>
   </div>
-</section>
-</div>

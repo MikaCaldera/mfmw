@@ -16,7 +16,7 @@
         </div>
       <div class="col-lg-8">
         <h6 class=""><?= $subtitle; ?></h6>
-        <p><?= $content; ?></p>
+        <?= $content; ?>
       </div>
       <div class="col-lg-4">
         <img  class="picture" src="<?= $picture; ?>" alt="">
